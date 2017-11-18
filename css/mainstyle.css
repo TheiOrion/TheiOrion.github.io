@@ -3,12 +3,67 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	background-image: url(https://i.imgur.com/WDEo1ye.png);
+	overflow: hidden;
+}
+.bodyClass{
+	background: black;
+}
+
+.bodyBackgroundOne,
+.bodyBackgroundTwo,
+.bodyBackgroundThree,
+.bodyBackgroundFour,
+.bodyBackgroundFive,
+.bodyBackgroundSix,
+.bodyBackgroundSeven,
+.bodyBackgroundEight,
+.bodyBackgroundNine,
+.bodyBackgroundTen,
+.bodyBackgroundEleven,
+.bodyBackgroundTwelve{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	overflow: hidden;
 }
+
+.bodyBackgroundOne{
+background-image: url(https://i.imgur.com/WDEo1ye.png) !important;
+}
+.bodyBackgroundTwo{
+background-image: url(https://i.imgur.com/t1bpvhM.png) !important;
+}
+.bodyBackgroundThree{
+background-image: url(https://i.imgur.com/0i7uwb1.png) !important;
+}
+.bodyBackgroundFour{
+background-image: url(https://i.imgur.com/upkyzSk.png) !important;
+}
+.bodyBackgroundFive{
+background-image: url(https://i.imgur.com/57etZt8.png) !important;
+}
+.bodyBackgroundSix{
+background-image: url(https://i.imgur.com/7ypG87g.png) !important;
+}
+.bodyBackgroundSeven{
+background-image: url(https://i.imgur.com/16yID8T.png) !important;
+}
+.bodyBackgroundEight{
+background-image: url(https://i.imgur.com/K3JiABq.png) !important;
+}
+.bodyBackgroundNine{
+background-image: url(https://i.imgur.com/wp9pxLA.png) !important;
+}
+.bodyBackgroundTen{
+background-image: url(https://i.imgur.com/0hrJyiH.png) !important;
+}
+.bodyBackgroundEleven{
+background-image: url(https://i.imgur.com/kTOwaoK.png) !important;
+}
+.bodyBackgroundTwelve{
+background-image: url(https://i.imgur.com/m9tQm4g.png) !important;
+}
+
+
 .backOverlay{
 	width: 100%;
 	height: 100%;

@@ -1,7 +1,53 @@
 $(function() {
+
+    var $bodyClass = $(".bodyClass");
+    var randomBodyNumber = Math.floor(Math.random() * 12) + 1;
+    var bodyImageObject = {
+        1:{
+            "className": "bodyBackgroundOne"
+        },
+        2:{
+            "className": "bodyBackgroundTwo"
+        },
+        3:{
+            "className": "bodyBackgroundThree"
+        },
+        4:{
+            "className": "bodyBackgroundFour"
+        },
+        5:{
+            "className": "bodyBackgroundFive"
+        },
+        6:{
+            "className": "bodyBackgroundSix"
+        },
+        7:{
+            "className": "bodyBackgroundSeven"
+        },
+        8:{
+            "className": "bodyBackgroundEight"
+        },
+        9:{
+            "className": "bodyBackgroundNine"
+        },
+        10:{
+            "className": "bodyBackgroundTen"
+        },
+        11:{
+            "className": "bodyBackgroundEleven"
+        },
+        12:{
+            "className": "bodyBackgroundTwelve"
+        }
+    };
+
+    var randomBodyClass = bodyImageObject[randomBodyNumber]["className"];
+    $bodyClass.addClass(randomBodyClass);
+
+
     var $barItemFive = $("#barItemFive");
     var randomNumber = Math.floor(Math.random() * 31) + 1;
-    console.log(randomNumber);
+
     var funhausObject = {
         1:{
             "url":"https://i.imgur.com/OUVhCmW.png"
