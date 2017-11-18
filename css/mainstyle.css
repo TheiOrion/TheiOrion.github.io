@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-image: url(https://i.imgur.com/WDEo1ye.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.backOverlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.75);
+	position: fixed;
+}
+
+.itemBar{
+	position: absolute;
+	max-width: 10% !important;
+	min-width: 200px;
+	height: 100%;
+	/*margin-left: 2.5px;*/
+	margin-left: 10px;
+	padding-top: 12.5px;
+	z-index: 500;
+}
+.barItems{
+	height: 175px;
+	width: 175px;
+	margin-top: 5px;
+}
+.barItemCol{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.triggerButtons{
+	width: 100%;
+	height: 100%;
+	color: #f6f5fb;
+    font-family: 'Anton', sans-serif;
+	font-size: 40px;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	border: none;
+}
+
+#vids{
+	background: rgba(204, 24, 30, 0.6);
+	border: solid 4px rgba(204, 24, 30, 1);
+	transition: background 1s, color 1s ease;
+}
+#vids:hover,
+#vids:active{
+	color: #56a0d3;
+	background: rgba(204, 24, 30, 1);
+}
+
+#social{
+	background: rgba(59, 89, 152, 0.6);
+	border: solid 4px rgba(59, 89, 152, 1);
+	transition: background 1s, color 1s ease;
+}
+#social:hover,
+#social:active{
+	color: #56a0d3;
+	background: rgba(59, 89, 152, 1);
+}
+
+#game{
+	background: rgba(255, 211, 3, 0.6);
+	border: solid 4px rgba(255, 211, 3, 0.6);
+	transition: background 1s, color 1s ease;
+}
+#game:hover,
+#game:active{
+	color: #56a0d3;
+	background: rgba(255, 211, 3, 1);
+}
+
+#news{
+	background: rgba(0, 135, 0, 0.6);
+	border: solid 4px rgba(0, 135, 0, 0.6);
+	transition: background 1s, color 1s ease;
+}
+#news:hover,
+#news:active{
+	color: #56a0d3;
+	background: rgba(0, 135, 0, 1);
+}
+
+
+#barItemFive{
+	border: 4px solid #FF7F00;
+	opacity: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: background 1s, opacity 2.5s ease;
+}
+
+#dismissAll{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+}
+
+
+.vidsButtonActive{
+	color: #56a0d3 !important;
+	background: rgba(204, 24, 30, 1) !important;
+}
+.socialButtonActive{
+	color: #56a0d3 !important;
+	background: rgba(59, 89, 152, 1) !important;
+}
+.gameButtonActive{
+	color: #56a0d3 !important;
+	background: rgba(255, 211, 3, 1) !important;
+}
+.newsButtonActive{
+	color: #56a0d3 !important;
+	background: rgba(0, 135, 0, 1) !important;
+}
+
+
+.selectedVids{
+z-index: 499;
+position: absolute;
+height: 90%;
+left: -110%;
+top: 5%;
+background: rgba(204, 24, 30, 0.5);
+border: solid 4px rgba(204, 24, 30, 1);
+border-radius: 15px;
+width: 88%;
+
+transition: left 1s ease-in;
+}
+
+.selectedSocial{
+z-index: 499;
+position: absolute;
+height: 90%;
+left: 12%;
+top: -110%;
+background: rgba(59, 89, 152, 0.5);
+border: solid 4px rgba(59, 89, 152, 1);
+border-radius: 15px;
+width: 88%;
+
+transition: top 1s ease-in;
+}
+
+.selectedGame{
+z-index: 499;
+position: absolute;
+height: 90%;
+left: -110%;
+top: 5%;
+background: rgba(255, 211, 3, 0.5);
+border: solid 4px rgba(255, 211, 3, 1);
+border-radius: 15px;
+width: 88%;
+
+transition: left 1s ease-in;
+
+}
+
+.selectedNews{
+z-index: 499;
+position: absolute;
+height: 90%;
+left: 12%;
+top: -110%;
+background: rgba(0, 135, 0, 0.5);
+border: solid 4px rgba(0, 135, 0, 1);
+border-radius: 15px;
+width: 88%;
+
+transition: top 1s ease-in;
+}
+
+.vidsActive{
+left: 12%;
+}
+.socialActive{
+top: 5%;
+}
+.gameActive{
+left: 12%;
+}
+.newsActive{
+top: 5%;
+}
+
+.selectedVidsCol,
+.selectedSocialCol,
+.selectedGameCol,
+.selectedNewsCol{
+height: 100%;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.rowOne,
+.rowTwo,
+.rowThree{
+	width: 100%;
+	height: 33.33333333333333%;
+	/*padding-top: 5px;*/
+}
+.linkCol{
+	height: 100%;
+}
